@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LaporanActivity"
+    android:background="@drawable/glassmorphism_wallpaper">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:padding="16dp"
+        android:paddingBottom="8dp"
+        android:text="Riwayat Perhitungan"
+        android:gravity="bottom"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/glassmorphism_table"
+        app:backgroundTint="#1A000000"
+        app:backgroundTintMode="add"
+        android:minHeight="400dp"
+        android:padding="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <Button
+        android:id="@+id/buttonHapusSemua"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/glassmorphism_button"
+        android:text="Bersihkan"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:backgroundTint="#33FF0084"
+        app:backgroundTintMode="add" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_left"
+            app:backgroundTint="@null"
+            android:onClick="homeButtonClick"
+            android:stateListAnimator="@android:animator/fade_in"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_laporan"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_right"
+            app:backgroundTint="@null"
+            android:onClick="laporanButtonClick"
+            android:stateListAnimator="@android:animator/fade_in"
+            android:text="Laporan"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </TableRow>
+
+</LinearLayout>

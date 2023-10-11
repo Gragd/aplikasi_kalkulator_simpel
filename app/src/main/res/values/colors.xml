@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_purple">#2B193D</color>
+    <color name="summer_sky">#1CB5E0</color>
+    <color name="dark_blue">#000046</color>
+    <color name="deep_pink">#FF0084</color>
+    <color name="toledo">#33001B</color>
+
+</resources>
